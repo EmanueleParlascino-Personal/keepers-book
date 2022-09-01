@@ -7,15 +7,16 @@ function App() {
     <div className="App">
       <img alt = 'corner' src='../assets/corner-accent.png' className = "corner-left" />
       <img alt = 'corner' src='../assets/corner-accent.png' className = "corner-right" />
-      <header className="App-header">
-        <img alt = 'title' src='../assets/title-bg.png' className = "title" />
-      </header>
+      <img alt = 'title' src='../assets/title-bg.png' className = "title" />
       <div className='body'>
-      <img alt = 'title' src='../assets/arrow-accent.png' className = "arrow-rotated" />
-        <p className='about'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-            reprehenderit optio amet ab temporibus asperiores quasi cupiditate. 
-            Voluptatum ducimus voluptates voluptas?</p>
+        <img alt = 'title' src='../assets/arrow-accent.png' className = "arrow-rotated" />
+        <div className='about-block'>
+          <p className='about'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
+              reprehenderit optio amet ab temporibus asperiores quasi cupiditate. 
+              Voluptatum ducimus voluptates voluptas?</p>
+            <img alt = 'signature' src='../assets/signature.png' className = "signature" />    
+        </div>    
         <img alt = 'title' src='../assets/arrow-accent.png' className = "arrow" />    
       </div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/sK_eSWy_sQ0" 
@@ -25,9 +26,15 @@ function App() {
                     allowfullscreen></iframe> 
       <img alt = 'title' src='../assets/footer-img.png' className = "fregio" />               
       <footer className='footer'>
-        <SocialIcon url="https://www.youtube.com/channel/UC0tISnW4zwlY1abcOXvOuMg" />
+        <div className='social-item'>
+          <SocialIcon url="https://www.youtube.com/channel/UC0tISnW4zwlY1abcOXvOuMg" />
+        </div>
+        <div className='social-item'>
         <SocialIcon url="https://www.twitter.com" />
+        </div>
+        <div className='social-item'>
         <SocialIcon url="https://www.instagram.com" />
+        </div>
       </footer>
     </div>
   );
